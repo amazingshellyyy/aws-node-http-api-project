@@ -1,0 +1,26 @@
+service: aws-node-http-api-project
+custom:
+ apigwBinary:
+   types:
+     — 'application/pdf'
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+package:
+  patterns:
+    - 'node_modules/**'
+functions:
+  hello:
+    handler: compiledHandler.hello
+    events:
+      - httpApi:
+          path: /
+          method: get
+  createPDF:
+    handler: compiledHandler.createPDF
+    events:
+      - httpApi:
+          path: /createPDF
+          method: post

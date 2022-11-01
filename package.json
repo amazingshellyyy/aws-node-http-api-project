@@ -1,0 +1,21 @@
+{
+  "name": "pdftesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-react": "^7.18.6",
+    "@react-pdf/renderer": "^3.0.0",
+    "esm": "^3.2.25",
+    "react": "^16.14.0",
+    "serverless": "^3.23.0"
+  }
+}
